@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background-color: #1976D2;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.declara {
+    background-color: #fff;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.indicador::after {
+    content: "♥"; 
+    text-shadow: 1px 2px 0px #000; 
+    font-size: 20px;
+    color: red; 
+    margin-left: 5px; 
+    display: none;
+}
+
+input:valid + .indicador::after,
+select:valid + .indicador::after {
+    display: inline;
+}
+
+button {
+    background: #1976D2;
+    color: white;
+    border: none;
+    width: 15%;
+    height: 40px;
+}
+
+button:hover {
+    background-color: rgb(181, 0, 0);
+    cursor: pointer;
+    transition: background .7s;
+}

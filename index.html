@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario IMMS</title>
+</head>
+<body>
+    <h1>Información del paciente</h1>
+    <form action="" class="declara" id="contact_form">
+        <ul>
+            <li>
+                <span class="required notification"> *Agregue sus datos*</span>
+            </li>
+            <li>
+                <label for="nombre">Nombre(s)</label><br>
+                <input type="text" name="nombre" pattern="[A-Za-z ]+" maxlength="15" placeholder="Nombre(s)" required>
+                <span class="indicador"></span>
+            </li>
+            <li>
+                <label for="apellido">Apell&iacute;do(s)</label><br>
+                <input type="text" name="apellido" pattern="[A-Za-z ]+" maxlength="20" placeholder="Apell&iacute;do(s)" required>
+                <span class="indicador"></span>
+            </li>
+            <li>
+                <label for="tipoSangre">Tipo de Sangre: </label>
+                <select name="tipoSangre" class="sangre" required>
+                    <option value="" disabled selected>--Opciones</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="AB">AB</option>
+                    <option value="O">O</option>
+                    <option value="A">A</option>
+                    <option value="RH">RH</option>
+                </select>
+                <span class="indicador"></span>
+                <select name="signo" required>
+                    <option value="" disabled selected>--Opciones</option>
+                    <option value="positivo">+</option>
+                    <option value="nulo">nulo</option>
+                    <option value="negativo">-</option>
+                </select>
+                <span class="indicador"></span>
+            </li>
+            <li>
+                <label for="edad">Edad</label>
+                <input type="text" placeholder="Edad" id="edad" maxlength="2">
+                <span class="indicador"></span>
+            </li>
+            <li>
+                <label for="especialidad">Especialidad</label>
+                <select name="especialidad" required>
+                    <option value="">seleccionar</option>
+                    <option value="odontologia">Odontologia</option>
+                    <option value="urologia">Urologia</option>
+                    <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="psicologia">Psicologia</option>
+                    <option value="psiquiatria">Psiquiatria</option>
+                    <option value="ginecologia">Ginecologia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="nutriologia">Nutriologia</option>
+                </select>
+                <span class="indicador"></span>
+            </li>
+            <li>
+                <label for="telefono">Lada:</label>
+                <input type="text" id="lada" name="lada" maxlength="3" placeholder="Lada" required>
+                <span class="indicador"></span>
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" maxlength="7" placeholder="Teléfono" required>
+                <span class="indicador"></span>
+            </li>
+            <li>
+                <button class="submit" type="submit">Enviar</button>
+            </li>
+        </ul>
+    </form>
+</body>
+</html>
